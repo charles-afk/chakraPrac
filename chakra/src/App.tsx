@@ -1,6 +1,6 @@
 //import React from 'react';
 import './App.css';
-import { Box, Text } from "@chakra-ui/react"
+import { Box, Text, Flex } from "@chakra-ui/react"
 
 function App() {
   return (
@@ -69,6 +69,17 @@ function App() {
       >
         !
       </Box>
+
+      {/** Flexbox */}
+      <Box style={{border:'1px solid black'}} 
+        display="flex" alignItems="center" justifyContent="space-between">
+        Box with Flex props
+      </Box>
+
+      <Flex style={{border:'1px solid green'}} 
+        align="center" justify="center">
+        Flex Container
+      </Flex>
     </div>
   );
 }
