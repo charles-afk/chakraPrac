@@ -1,6 +1,6 @@
 //import React from 'react';
 import './App.css';
-import { Box, Text, Flex, Grid } from "@chakra-ui/react"
+import { Box, Text, Flex, Grid, Button } from "@chakra-ui/react"
 
 function App() {
   return (
@@ -109,6 +109,12 @@ function App() {
       <Box border='1px' borderColor='gray.200'>
         Card
       </Box>
+
+      <Button borderRightRadius="0" my={5}>Button 1</Button><br/>
+      <Button borderLeftRadius="0" my={5}>Button 2</Button><br/>
+      <Button borderTopRadius="md" my={5}>Button 2</Button><br/>
+
+      
     </div>
   );
 }
