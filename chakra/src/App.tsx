@@ -39,6 +39,36 @@ function App() {
         Welcome to Chakra UI Text!
       </Text>
 
+      {/** Layout, width and height */}
+      <Box style={{border:'1px solid black'}}
+        width="100%" height={32}
+      >
+        Welcome
+      </Box>
+
+      <Box style={{border:'1px solid black'}}
+        w="100%" h="32px" 
+      >
+        To
+      </Box>
+
+      <Box style={{border:'1px solid black'}}
+        boxSize="sm"
+      >
+        Chakra
+      </Box>
+
+      <Box style={{border:'1px solid black'}}
+        w={256} 
+      >
+        UI
+      </Box>
+
+      <Box style={{border:'1px solid black'}}
+        w='40px' 
+      >
+        !
+      </Box>
     </div>
   );
 }
