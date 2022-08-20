@@ -1,8 +1,9 @@
 //import React from 'react';
 import './App.css';
 import { Box, Text, Flex, Grid, Button, SimpleGrid } from "@chakra-ui/react"
-
+import Filters from './Filters';
 function App() {
+  
   return (
     <div className="App" style={{backgroundColor: 'gray'}}>
 
@@ -163,6 +164,12 @@ function App() {
           Inner
         </Box>
       </SimpleGrid>
+
+      <Text textShadow='1px 1px #ff0000' m='6'>
+        Text with shadows
+      </Text>
+
+      <Filters/>
     </div>
   );
 }
