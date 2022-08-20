@@ -1,6 +1,6 @@
 //import React from 'react';
 import './App.css';
-import { Box, Text, Flex } from "@chakra-ui/react"
+import { Box, Text, Flex, Grid } from "@chakra-ui/react"
 
 function App() {
   return (
@@ -80,6 +80,17 @@ function App() {
         align="center" justify="center">
         Flex Container
       </Flex>
+
+      {/* Grid Layout */}
+      <Box style={{border:'1px solid black'}} 
+        display="grid" gridGap={2} gridAutoFlow="row dense">
+        Grid Box
+      </Box>
+
+      <Grid style={{border:'1px dotted blue'}}
+        gap={2} autoFlow="row dense">
+        Grid
+      </Grid>
     </div>
   );
 }
