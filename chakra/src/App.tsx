@@ -4,7 +4,7 @@ import { Box, Text, Flex, Grid } from "@chakra-ui/react"
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{backgroundColor: 'gray'}}>
 
       <Text
         bgGradient="linear(to-l, #7928CA, #FF0080)"
@@ -99,6 +99,16 @@ function App() {
         backgroundRepeat="no-repeat"
       />
 
+      <Box
+        bgImage="url('/images/gaara.png')"
+        bgPosition="center"
+        bgRepeat="no-repeat"
+      />      
+
+      {/** Borders */}
+      <Box border='1px' borderColor='gray.200'>
+        Card
+      </Box>
     </div>
   );
 }
