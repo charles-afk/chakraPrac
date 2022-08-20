@@ -15,6 +15,12 @@ function App() {
       >
         Welcome to Chakra UI
       </Text>
+
+      <Box style={{border:'1px solid black'}}
+        maxW="960px" mx="auto"
+        p={[2,3]}>
+        Box1
+      </Box>
     </div>
   );
 }
