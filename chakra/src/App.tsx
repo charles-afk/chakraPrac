@@ -202,7 +202,10 @@ function App() {
         A pseudo element
       </Box>
 
-      
+      {/** The as prop */}
+      <Button as='a' target='_blank' variant='outline' href='https://chakra-ui.com'>
+        Hello
+      </Button>
     </div>
   );
 }
