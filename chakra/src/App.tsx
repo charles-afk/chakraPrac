@@ -2,6 +2,7 @@
 import './App.css';
 import { Box, Text, Flex, Grid, Button, SimpleGrid } from "@chakra-ui/react"
 import Filters from './Filters';
+import BackdropFilters from './BackdropFilters';
 function App() {
   
   return (
@@ -170,6 +171,8 @@ function App() {
       </Text>
 
       <Filters/>
+
+      <BackdropFilters/>
     </div>
   );
 }
