@@ -170,9 +170,39 @@ function App() {
         Text with shadows
       </Text>
 
-      <Filters/>
+      <Filters/><br/>
 
-      <BackdropFilters/>
+      <BackdropFilters/><br/>
+
+      {/** Pseudo */}
+      <Button
+        colorScheme="teal"
+        _hover={{
+          background: "white",
+          color: "teal.500",
+        }}
+      >
+        Hover me
+      </Button>
+
+      <Box
+        role="group"
+      >
+        <Box
+          _hover={{ fontWeight: 'semibold' }}
+          _groupHover={{ color: 'tomato' }}
+        >
+          Over Here
+        </Box>
+      </Box>
+
+      <Box
+        _before={{ content: '"🙂"', display: 'inline-block', mr: '5px' }}
+      >
+        A pseudo element
+      </Box>
+
+      
     </div>
   );
 }
