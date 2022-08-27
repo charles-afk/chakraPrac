@@ -1,55 +1,118 @@
-import React from 'react'
-import { Box, Text, Flex, Center } from "@chakra-ui/react"
+import React, { Fragment } from 'react'
+import { 
+    Box, 
+    Text, 
+    Flex, 
+    Center, 
+    Accordion, 
+    AccordionItem,
+    AccordionButton,
+    AccordionIcon, 
+    AccordionPanel
+} from "@chakra-ui/react"
 import { HiOutlineCash } from 'react-icons/hi'
 
 const Dropdown = () => {
     const service = { service: 107 }
 
     return (
-        <div>
-            <Flex p={5} style={{border:'1px solid black'}} w='100%'>
-                <Box p={3} w='100%'>
-                    <Flex>
-                        <Center>
-                            <HiOutlineCash/>&nbsp;
-                            <Text>TestingTitle</Text>&nbsp;
-                            
-                        </Center>
-                    </Flex>
-                    <Flex w='100%'>
-                        <Box style={{border:'1px solid black'}}
-                        w='20%'>
+        <Fragment>
+            <Accordion allowToggle>
+                <AccordionItem>
+                    <Flex p={5} style={{border:'1px solid black'}} 
+                    w='100%'>
+                        <Box p={3} w='100%'>
                             <Flex>
-                                <Center>
-                                    <HiOutlineCash/>&nbsp;
-                                    <Text>Title1</Text>&nbsp;
-                                    <Text fontWeight='bold'>
-                                        {service.service}
-                                    </Text>
-                                </Center>
+                                <AccordionButton>
+                                    <Center>
+                                        <HiOutlineCash/>&nbsp;
+                                        <Text>TestingTitle</Text>&nbsp;
+                                        <AccordionIcon/>
+                                    </Center>
+                                </AccordionButton>
                             </Flex>
-                            
-                        </Box>
-                        <Box style={{border:'1px solid black'}}
-                        w='20%'>
-                            Title 2
-                        </Box>
-                        <Box style={{border:'1px solid black'}}
-                        w='20%'>
-                            Title 3
-                        </Box>
-                        <Box style={{border:'1px solid black'}}
-                        w='20%'>
-                            Title 4
-                        </Box>
-                        <Box style={{border:'1px solid black'}}
-                        w='20%'>
-                            Title 5
+                            <Flex w='100%'>
+                                <Box style={{border:'1px solid black'}}
+                                w='20%'>
+                                    <Flex>
+                                        <Center>
+                                            <HiOutlineCash/>&nbsp;
+                                            <Text>Title1</Text>&nbsp;
+                                            <Text fontWeight='bold'>
+                                                {service.service}
+                                            </Text>
+                                        </Center>
+                                    </Flex>
+                                    <AccordionPanel>
+                                        Text
+                                    </AccordionPanel>
+                                </Box>
+                                <Box style={{border:'1px solid black'}}
+                                w='20%'>
+                                    <Flex>
+                                        <Center>
+                                            <HiOutlineCash/>&nbsp;
+                                            <Text>Title1</Text>&nbsp;
+                                            <Text fontWeight='bold'>
+                                                {service.service}
+                                            </Text>
+                                        </Center>
+                                    </Flex>
+                                    <AccordionPanel>
+                                        Text
+                                    </AccordionPanel>
+                                </Box>
+                                <Box style={{border:'1px solid black'}}
+                                w='20%'>
+                                    <Flex>
+                                        <Center>
+                                            <HiOutlineCash/>&nbsp;
+                                            <Text>Title1</Text>&nbsp;
+                                            <Text fontWeight='bold'>
+                                                {service.service}
+                                            </Text>
+                                        </Center>
+                                    </Flex>
+                                    <AccordionPanel>
+                                        Text
+                                    </AccordionPanel>
+                                </Box>
+                                <Box style={{border:'1px solid black'}}
+                                w='20%'>
+                                    <Flex>
+                                        <Center>
+                                            <HiOutlineCash/>&nbsp;
+                                            <Text>Title1</Text>&nbsp;
+                                            <Text fontWeight='bold'>
+                                                {service.service}
+                                            </Text>
+                                        </Center>
+                                    </Flex>
+                                    <AccordionPanel>
+                                        Text
+                                    </AccordionPanel>
+                                </Box>
+                                <Box style={{border:'1px solid black'}}
+                                w='20%'>
+                                    <Flex>
+                                        <Center>
+                                            <HiOutlineCash/>&nbsp;
+                                            <Text>Title1</Text>&nbsp;
+                                            <Text fontWeight='bold'>
+                                                {service.service}
+                                            </Text>
+                                        </Center>
+                                    </Flex>
+                                    <AccordionPanel>
+                                        Text
+                                    </AccordionPanel>
+                                </Box>
+                            </Flex>
                         </Box>
                     </Flex>
-                </Box>
-            </Flex>
-        </div>
+                </AccordionItem>
+            </Accordion>
+        </Fragment>
     )
 }
 
