@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import { Fragment } from 'react';
 import { 
     Box, 
     Text, 
@@ -9,11 +9,15 @@ import {
     AccordionButton,
     AccordionIcon, 
     AccordionPanel
-} from "@chakra-ui/react"
-import { HiOutlineCash } from 'react-icons/hi'
+} from "@chakra-ui/react";
+import { HiOutlineCash } from 'react-icons/hi';
+import { AiOutlineVideoCamera } from 'react-icons/ai';
+import { BsChatRightText } from 'react-icons/bs'; 
+import { BiWrench } from 'react-icons/bi';
+import { TiGlobeOutline } from 'react-icons/ti'
 
 const Dropdown = () => {
-    const service = { service: 107 }
+    const service = { service: 107 };
 
     return (
         <Fragment>
@@ -35,7 +39,7 @@ const Dropdown = () => {
                                 <Box style={{border:'1px solid black'}}
                                 w='20%'>
                                     <Flex>
-                                        <Center>
+                                        <Center>&nbsp;
                                             <HiOutlineCash/>&nbsp;
                                             <Text>Title1</Text>&nbsp;
                                             <Text fontWeight='bold'>
@@ -50,9 +54,9 @@ const Dropdown = () => {
                                 <Box style={{border:'1px solid black'}}
                                 w='20%'>
                                     <Flex>
-                                        <Center>
-                                            <HiOutlineCash/>&nbsp;
-                                            <Text>Title1</Text>&nbsp;
+                                        <Center>&nbsp;
+                                            <AiOutlineVideoCamera/>&nbsp;
+                                            <Text>Title2</Text>&nbsp;
                                             <Text fontWeight='bold'>
                                                 {service.service}
                                             </Text>
@@ -65,9 +69,9 @@ const Dropdown = () => {
                                 <Box style={{border:'1px solid black'}}
                                 w='20%'>
                                     <Flex>
-                                        <Center>
-                                            <HiOutlineCash/>&nbsp;
-                                            <Text>Title1</Text>&nbsp;
+                                        <Center>&nbsp;
+                                            <BsChatRightText/>&nbsp;
+                                            <Text>Title3</Text>&nbsp;
                                             <Text fontWeight='bold'>
                                                 {service.service}
                                             </Text>
@@ -80,9 +84,9 @@ const Dropdown = () => {
                                 <Box style={{border:'1px solid black'}}
                                 w='20%'>
                                     <Flex>
-                                        <Center>
-                                            <HiOutlineCash/>&nbsp;
-                                            <Text>Title1</Text>&nbsp;
+                                        <Center>&nbsp;
+                                            <BiWrench/>&nbsp;
+                                            <Text>Title4</Text>&nbsp;
                                             <Text fontWeight='bold'>
                                                 {service.service}
                                             </Text>
@@ -95,9 +99,9 @@ const Dropdown = () => {
                                 <Box style={{border:'1px solid black'}}
                                 w='20%'>
                                     <Flex>
-                                        <Center>
-                                            <HiOutlineCash/>&nbsp;
-                                            <Text>Title1</Text>&nbsp;
+                                        <Center>&nbsp;
+                                            <TiGlobeOutline/>&nbsp;
+                                            <Text>Title5</Text>&nbsp;
                                             <Text fontWeight='bold'>
                                                 {service.service}
                                             </Text>
@@ -113,7 +117,7 @@ const Dropdown = () => {
                 </AccordionItem>
             </Accordion>
         </Fragment>
-    )
+    );
 }
 
-export default Dropdown
+export default Dropdown;
