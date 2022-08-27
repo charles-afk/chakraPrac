@@ -12,7 +12,7 @@ const Dropdown = () => {
                     <Flex>
                         <Center>
                             <HiOutlineCash/>&nbsp;
-                            <Text>Customer Service</Text>&nbsp;
+                            <Text>TestingTitle</Text>&nbsp;
                             
                         </Center>
                     </Flex>
