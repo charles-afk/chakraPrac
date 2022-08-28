@@ -17,7 +17,25 @@ import { BiWrench } from 'react-icons/bi';
 import { TiGlobeOutline } from 'react-icons/ti'
 
 const Dropdown = () => {
-    const service = { service: 107 };
+    const service = { 
+        service: 107,
+    };
+
+    const cams = {
+        cams: 54,
+    }
+
+    const chats = {
+        chats: 33,
+    }
+
+    const fixes = {
+        fixes: 65,
+    }
+
+    const world = {
+        world: 99
+    }
 
     return (
         <Fragment>
@@ -25,26 +43,29 @@ const Dropdown = () => {
                 <AccordionItem>
                     <Flex p={5} style={{border:'1px solid black'}} 
                     w='100%'>
-                        <Box p={3} w='100%'>
+                        <Box p={3} w='100%' >
                             <Flex>
                                 <AccordionButton>
                                     <Center>
                                         <HiOutlineCash/>&nbsp;
-                                        <Text>TestingTitle</Text>&nbsp;
+                                        <Text>Testing Title</Text>&nbsp;
                                         <AccordionIcon/>
                                     </Center>
                                 </AccordionButton>
                             </Flex>
                             <Flex w='100%'>
                                 <Box style={{border:'1px solid black'}}
-                                w='20%'>
-                                    <Flex>
+                                w='20%' borderTopLeftRadius='2xl'
+                                borderBottomLeftRadius='2xl'>
+                                    <Flex justifyContent='space-between'>
                                         <Center>&nbsp;
                                             <HiOutlineCash/>&nbsp;
-                                            <Text>Title1</Text>&nbsp;
-                                            <Text fontWeight='bold'>
+                                            <Text fontWeight='bold'>Money</Text>&nbsp;
+                                        </Center>
+                                        <Center>
+                                            <Text fontWeight='bold' color='green'>
                                                 {service.service}
-                                            </Text>
+                                            </Text>&nbsp;
                                         </Center>
                                     </Flex>
                                     <AccordionPanel>
@@ -53,13 +74,15 @@ const Dropdown = () => {
                                 </Box>
                                 <Box style={{border:'1px solid black'}}
                                 w='20%'>
-                                    <Flex>
+                                    <Flex justifyContent='space-between'>
                                         <Center>&nbsp;
                                             <AiOutlineVideoCamera/>&nbsp;
-                                            <Text>Title2</Text>&nbsp;
-                                            <Text fontWeight='bold'>
-                                                {service.service}
-                                            </Text>
+                                            <Text fontWeight='bold'>Cameras</Text>&nbsp;
+                                        </Center>
+                                        <Center>
+                                            <Text fontWeight='bold' color='green'>
+                                                {cams.cams}
+                                            </Text>&nbsp;
                                         </Center>
                                     </Flex>
                                     <AccordionPanel>
@@ -68,14 +91,17 @@ const Dropdown = () => {
                                 </Box>
                                 <Box style={{border:'1px solid black'}}
                                 w='20%'>
-                                    <Flex>
+                                    <Flex justifyContent='space-between'>
                                         <Center>&nbsp;
                                             <BsChatRightText/>&nbsp;
-                                            <Text>Title3</Text>&nbsp;
-                                            <Text fontWeight='bold'>
-                                                {service.service}
-                                            </Text>
+                                            <Text fontWeight='bold'>Chats</Text>&nbsp;
                                         </Center>
+                                        <Center>
+                                            <Text fontWeight='bold' color='green'>
+                                                {chats.chats}
+                                            </Text>&nbsp;
+                                        </Center>
+                                        
                                     </Flex>
                                     <AccordionPanel>
                                         Text
@@ -83,13 +109,15 @@ const Dropdown = () => {
                                 </Box>
                                 <Box style={{border:'1px solid black'}}
                                 w='20%'>
-                                    <Flex>
+                                    <Flex justifyContent='space-between'>
                                         <Center>&nbsp;
                                             <BiWrench/>&nbsp;
-                                            <Text>Title4</Text>&nbsp;
-                                            <Text fontWeight='bold'>
-                                                {service.service}
-                                            </Text>
+                                            <Text fontWeight='bold'>Fixes</Text>&nbsp;
+                                        </Center>
+                                        <Center>
+                                            <Text fontWeight='bold' color='green'>
+                                                {fixes.fixes}
+                                            </Text>&nbsp;
                                         </Center>
                                     </Flex>
                                     <AccordionPanel>
@@ -97,14 +125,17 @@ const Dropdown = () => {
                                     </AccordionPanel>
                                 </Box>
                                 <Box style={{border:'1px solid black'}}
-                                w='20%'>
-                                    <Flex>
+                                w='20%' borderTopRightRadius='2xl'
+                                borderBottomRightRadius='2xl'>
+                                    <Flex justifyContent='space-between'>
                                         <Center>&nbsp;
                                             <TiGlobeOutline/>&nbsp;
-                                            <Text>Title5</Text>&nbsp;
-                                            <Text fontWeight='bold'>
-                                                {service.service}
-                                            </Text>
+                                            <Text fontWeight='bold'>World</Text>&nbsp;
+                                        </Center>
+                                        <Center>
+                                            <Text fontWeight='bold' color='green'>
+                                                {world.world}
+                                            </Text>&nbsp;
                                         </Center>
                                     </Flex>
                                     <AccordionPanel>
