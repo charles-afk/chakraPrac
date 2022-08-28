@@ -4,7 +4,7 @@ import {
     Text, 
     Flex, 
     Center, 
-    Accordion, 
+    Accordion,
     AccordionItem,
     AccordionButton,
     AccordionIcon, 
@@ -15,6 +15,7 @@ import { AiOutlineVideoCamera } from 'react-icons/ai';
 import { BsChatRightText } from 'react-icons/bs'; 
 import { BiWrench } from 'react-icons/bi';
 import { TiGlobeOutline } from 'react-icons/ti';
+import './Dropdown.css';
 
 const Dropdown = () => {
     const service = { 
@@ -57,7 +58,7 @@ const Dropdown = () => {
         <Fragment>
             <Accordion allowToggle>
                 <AccordionItem>
-                    <Flex p={5} style={{border:'1px solid black'}}>
+                    <Flex p={5}>
                         <Box p={3} w='100%'>
                             <Flex>
                                 <AccordionButton>
@@ -87,25 +88,32 @@ const Dropdown = () => {
                                         <Box>
                                             <Flex justifyContent='space-between'>
                                                 <Text>Serv1</Text>
-                                                <Text color='green.500' textDecoration='underline'>
+                                                <Text color='green.500' textDecoration='underline'
+                                                style={{cursor:'pointer'}}
+                                                onClick={()=>{
+                                                    console.log('here')
+                                                }}>
                                                     {service.serv1}
                                                 </Text>
                                             </Flex>
                                             <Flex justifyContent='space-between'>
                                                 <Text>Serv2</Text>
-                                                <Text color='green.500' textDecoration='underline'>
+                                                <Text color='green.500' textDecoration='underline'
+                                                style={{cursor:'pointer'}}>
                                                     {service.serv2}
                                                 </Text>
                                             </Flex>
                                             <Flex justifyContent='space-between'>
                                                 <Text>Serv3</Text>
-                                                <Text color='green.500' textDecoration='underline'>
+                                                <Text color='green.500' textDecoration='underline'
+                                                style={{cursor:'pointer'}}>
                                                     {service.serv3}
                                                 </Text>
                                             </Flex>
                                             <Flex justifyContent='space-between'>
                                                 <Text>Serv4</Text>
-                                                <Text color='red' textDecoration='underline'>
+                                                <Text color='red' textDecoration='underline'
+                                                style={{cursor:'pointer'}}>
                                                     {service.serv4}
                                                 </Text>
                                             </Flex>
