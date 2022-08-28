@@ -8,42 +8,57 @@ import {
     AccordionItem,
     AccordionButton,
     AccordionIcon, 
-    AccordionPanel
+    AccordionPanel,
 } from "@chakra-ui/react";
 import { HiOutlineCash } from 'react-icons/hi';
 import { AiOutlineVideoCamera } from 'react-icons/ai';
 import { BsChatRightText } from 'react-icons/bs'; 
 import { BiWrench } from 'react-icons/bi';
-import { TiGlobeOutline } from 'react-icons/ti'
+import { TiGlobeOutline } from 'react-icons/ti';
 
 const Dropdown = () => {
     const service = { 
         service: 107,
+        serv1: 50,
+        serv2: 30,
+        serv3: 40,
+        serv4: 44,
     };
 
     const cams = {
         cams: 54,
+        serv1: 50,
+        serv2: 30,
+        serv3: 40,
     }
 
     const chats = {
         chats: 33,
+        serv1: 50,
+        serv2: 30,
     }
 
     const fixes = {
         fixes: 65,
+        serv1: 50,
+        serv2: 30,
+        serv3: 40,
+        serv4: 44,
     }
 
     const world = {
-        world: 99
+        world: 99,
+        serv1: 50,
+        serv2: 30,
+        serv3: 40,
     }
 
     return (
         <Fragment>
             <Accordion allowToggle>
                 <AccordionItem>
-                    <Flex p={5} style={{border:'1px solid black'}} 
-                    w='100%'>
-                        <Box p={3} w='100%' >
+                    <Flex p={5} style={{border:'1px solid black'}}>
+                        <Box p={3} w='100%'>
                             <Flex>
                                 <AccordionButton>
                                     <Center>
@@ -69,7 +84,32 @@ const Dropdown = () => {
                                         </Center>
                                     </Flex>
                                     <AccordionPanel>
-                                        Text
+                                        <Box>
+                                            <Flex justifyContent='space-between'>
+                                                <Text>Serv1</Text>
+                                                <Text color='green.500' textDecoration='underline'>
+                                                    {service.serv1}
+                                                </Text>
+                                            </Flex>
+                                            <Flex justifyContent='space-between'>
+                                                <Text>Serv2</Text>
+                                                <Text color='green.500' textDecoration='underline'>
+                                                    {service.serv2}
+                                                </Text>
+                                            </Flex>
+                                            <Flex justifyContent='space-between'>
+                                                <Text>Serv3</Text>
+                                                <Text color='green.500' textDecoration='underline'>
+                                                    {service.serv3}
+                                                </Text>
+                                            </Flex>
+                                            <Flex justifyContent='space-between'>
+                                                <Text>Serv4</Text>
+                                                <Text color='red' textDecoration='underline'>
+                                                    {service.serv4}
+                                                </Text>
+                                            </Flex>
+                                        </Box>
                                     </AccordionPanel>
                                 </Box>
                                 <Box style={{border:'1px solid black'}}
@@ -86,7 +126,26 @@ const Dropdown = () => {
                                         </Center>
                                     </Flex>
                                     <AccordionPanel>
-                                        Text
+                                    <Box>
+                                            <Flex justifyContent='space-between'>
+                                                <Text>Serv1</Text>
+                                                <Text color='green.500' textDecoration='underline'>
+                                                    {cams.serv1}
+                                                </Text>
+                                            </Flex>
+                                            <Flex justifyContent='space-between'>
+                                                <Text>Serv2</Text>
+                                                <Text color='green.500' textDecoration='underline'>
+                                                    {cams.serv2}
+                                                </Text>
+                                            </Flex>
+                                            <Flex justifyContent='space-between'>
+                                                <Text>Serv3</Text>
+                                                <Text color='red' textDecoration='underline'>
+                                                    {cams.serv3}
+                                                </Text>
+                                            </Flex>
+                                        </Box>
                                     </AccordionPanel>
                                 </Box>
                                 <Box style={{border:'1px solid black'}}
@@ -101,10 +160,22 @@ const Dropdown = () => {
                                                 {chats.chats}
                                             </Text>&nbsp;
                                         </Center>
-                                        
                                     </Flex>
                                     <AccordionPanel>
-                                        Text
+                                        <Box>
+                                            <Flex justifyContent='space-between'>
+                                                <Text>Serv1</Text>
+                                                <Text color='green.500' textDecoration='underline'>
+                                                    {chats.serv1}
+                                                </Text>
+                                            </Flex>
+                                            <Flex justifyContent='space-between'>
+                                                <Text>Serv2</Text>
+                                                <Text color='red' textDecoration='underline'>
+                                                    {chats.serv2}
+                                                </Text>
+                                            </Flex>
+                                        </Box>
                                     </AccordionPanel>
                                 </Box>
                                 <Box style={{border:'1px solid black'}}
@@ -121,7 +192,32 @@ const Dropdown = () => {
                                         </Center>
                                     </Flex>
                                     <AccordionPanel>
-                                        Text
+                                        <Box>
+                                            <Flex justifyContent='space-between'>
+                                                <Text>Serv1</Text>
+                                                <Text color='green.500' textDecoration='underline'>
+                                                    {fixes.serv1}
+                                                </Text>
+                                            </Flex>
+                                            <Flex justifyContent='space-between'>
+                                                <Text>Serv2</Text>
+                                                <Text color='green.500' textDecoration='underline'>
+                                                    {fixes.serv2}
+                                                </Text>
+                                            </Flex>
+                                            <Flex justifyContent='space-between'>
+                                                <Text>Serv3</Text>
+                                                <Text color='green.500' textDecoration='underline'>
+                                                    {fixes.serv3}
+                                                </Text>
+                                            </Flex>
+                                            <Flex justifyContent='space-between'>
+                                                <Text>Serv3</Text>
+                                                <Text color='red' textDecoration='underline'>
+                                                    {fixes.serv3}
+                                                </Text>
+                                            </Flex>
+                                        </Box>
                                     </AccordionPanel>
                                 </Box>
                                 <Box style={{border:'1px solid black'}}
@@ -139,7 +235,26 @@ const Dropdown = () => {
                                         </Center>
                                     </Flex>
                                     <AccordionPanel>
-                                        Text
+                                        <Box>
+                                            <Flex justifyContent='space-between'>
+                                                <Text>Serv1</Text>
+                                                <Text color='green.500' textDecoration='underline'>
+                                                    {world.serv1}
+                                                </Text>
+                                            </Flex>
+                                            <Flex justifyContent='space-between'>
+                                                <Text>Serv2</Text>
+                                                <Text color='green.500' textDecoration='underline'>
+                                                    {world.serv2}
+                                                </Text>
+                                            </Flex>
+                                            <Flex justifyContent='space-between'>
+                                                <Text>Serv3</Text>
+                                                <Text color='red' textDecoration='underline'>
+                                                    {world.serv3}
+                                                </Text>
+                                            </Flex>
+                                        </Box>
                                     </AccordionPanel>
                                 </Box>
                             </Flex>
