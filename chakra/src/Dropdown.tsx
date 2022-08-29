@@ -71,9 +71,11 @@ const Dropdown = () => {
                             </Flex>
                             <Flex w='100%'>
                                 <Box style={{border:'1px solid black'}}
-                                w='20%' borderTopLeftRadius='2xl'
-                                borderBottomLeftRadius='2xl'>
-                                    <Flex justifyContent='space-between'>
+                                w='20%' borderTopLeftRadius='lg'
+                                borderBottomLeftRadius='lg'>
+                                    <Flex justifyContent='space-between' bgColor='lightgray'
+                                    className='borderRadii' borderTopLeftRadius='lg'
+                                    borderBottomLeftRadius='lg'>
                                         <Center>&nbsp;
                                             <HiOutlineCash/>&nbsp;
                                             <Text fontWeight='bold'>Money</Text>&nbsp;
@@ -85,7 +87,7 @@ const Dropdown = () => {
                                         </Center>
                                     </Flex>
                                     <AccordionPanel>
-                                        <Box>
+                                        <Box className='box'>
                                             <Flex justifyContent='space-between'>
                                                 <Text>Serv1</Text>
                                                 <Text color='green.500' textDecoration='underline'
@@ -122,7 +124,7 @@ const Dropdown = () => {
                                 </Box>
                                 <Box style={{border:'1px solid black'}}
                                 w='20%'>
-                                    <Flex justifyContent='space-between'>
+                                    <Flex justifyContent='space-between' bgColor='lightgray'>
                                         <Center>&nbsp;
                                             <AiOutlineVideoCamera/>&nbsp;
                                             <Text fontWeight='bold'>Cameras</Text>&nbsp;
@@ -158,7 +160,7 @@ const Dropdown = () => {
                                 </Box>
                                 <Box style={{border:'1px solid black'}}
                                 w='20%'>
-                                    <Flex justifyContent='space-between'>
+                                    <Flex justifyContent='space-between' bgColor='lightgray'>
                                         <Center>&nbsp;
                                             <BsChatRightText/>&nbsp;
                                             <Text fontWeight='bold'>Chats</Text>&nbsp;
@@ -188,7 +190,7 @@ const Dropdown = () => {
                                 </Box>
                                 <Box style={{border:'1px solid black'}}
                                 w='20%'>
-                                    <Flex justifyContent='space-between'>
+                                    <Flex justifyContent='space-between' bgColor='lightgray'>
                                         <Center>&nbsp;
                                             <BiWrench/>&nbsp;
                                             <Text fontWeight='bold'>Fixes</Text>&nbsp;
@@ -229,9 +231,11 @@ const Dropdown = () => {
                                     </AccordionPanel>
                                 </Box>
                                 <Box style={{border:'1px solid black'}}
-                                w='20%' borderTopRightRadius='2xl'
-                                borderBottomRightRadius='2xl'>
-                                    <Flex justifyContent='space-between'>
+                                w='20%' borderTopRightRadius='lg'
+                                borderBottomRightRadius='lg'>
+                                    <Flex justifyContent='space-between' bgColor='lightgray'
+                                    className='borderRadii' borderTopRightRadius='lg'
+                                    borderBottomRightRadius='lg'>
                                         <Center>&nbsp;
                                             <TiGlobeOutline/>&nbsp;
                                             <Text fontWeight='bold'>World</Text>&nbsp;
